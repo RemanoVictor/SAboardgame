@@ -1,0 +1,100 @@
+.boardBody{
+    background-image: url('/media/textures/boardgame_background.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+.details{
+    margin-bottom: 0;
+}
+
+.overlay{
+    background: rgba(000,000,000,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0%;
+    min-width: 100%;
+    min-height: 102%;
+    z-index: -1;
+}
+
+.boardGame{
+    margin:2% 0 0 10%;
+    padding: 5px;
+    
+    & img{
+        margin-top: -10px;
+        width: 47%;
+        height: 50px;
+    }
+    & .tile{
+        border: 1px solid white;
+        color: white;
+        height: 4.5em;
+        width: 15%;
+        margin: 5px;
+        padding: 0.5%;
+        border-radius: 5px;
+        p{
+            margin: 0;
+            padding: 0;
+        }
+    }    
+}
+
+.start{
+    display: none;
+    width: 100%;
+}
+
+.player{
+    text-align: center;
+    border-radius: 20px;
+}
+
+.update{
+    margin: 0;    
+    color: white;    
+    h2{
+        margin: 0;
+    }
+    p{
+        margin-top: 10%;
+        padding: 0;
+    }   
+}
+
+.trap{
+    background-image: url("/media/skull-crossbones-icon-0.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 000, 000,0.2 );
+}
+
+.dicebox{
+    margin: 0;
+    text-align: center;
+    .dice{
+        background-color: #fff;
+        color: #000;
+        padding: 2%;
+        border-radius: 5px;
+        font-weight: bolder;
+        font-size: 1.3em;        
+    }
+    .dice:hover{
+        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+    }
+    img{
+        color: white;
+        width: 30%;
+        height: 30%;
+    }
+    .diceNumber{
+        width: 100%;
+        margin-top: 5%;
+    }
+}
+
+

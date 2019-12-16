@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Welcome</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="icon" type="image/png" href="media/dragon2.png">
+</head>
+
+<body class="[ body ][ characterBody ][ animated fadeIn delay-1.2s ]">
+    <div class="[ container-fluid ]">
+        <div class="[ row ]">
+            <div class="[ navigation ]">
+                <ul>
+                    <li><a href="index.html" class="[ hvr-underline-from-center ]">Home</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="[ row ]">
+            <div class="[ characterPageOverlay ]"></div>
+            <video autoplay muted loop class="[ characterVid ]">
+                <source src="media/videos/Smoke - 306.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="[ container ][ chooseYourCharacter ]">
+        <div class="[ row ]">
+            <div class="[ col-lg-2 ]"></div>
+            <div class="[ col-lg-8 ]">
+                <h2> Choose Your Character</h2><br>
+                <p id="iconSelector">PLAYER 1: Click an icon to select a character</p>
+            </div>
+            <div class="[ col-lg-2 ]"></div>
+        </div>
+    </div>
+
+    <div class="[ row ]">
+        <div id="characterModal" class="[ characterModal ][ animated fadeIn delay-2 ]">
+            <div class="[ characterDetails ]">
+                <div class="[ card ]" id="card"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="[ container ][ characterContainer ]">
+        <div class="[ row ][ characterRowOne ]">
+            <div class="[ col-md-1 ]"></div>
+
+            <div class="[ col-md-2 ]">
+                <button onclick="callApi('Jon',583)">
+                    <img class="[ card--img ][ hvr-float ]" id="Jon" src="media/tokens/Jon.svg">
+                </button>
+            </div>
+
+            <div class="[ col-md-2 ]">
+                <button onclick="callApi('Tyrion',1052)">
+                    <img class="[ card--img ][ hvr-float ]" id="Tyrion" src="media/tokens/Tyrion.svg">
+                </button>
+            </div>
+
+            <div class="[ col-md-2 ]">
+                <button onclick="callApi('Gregor',1442)">
+                    <img class="[ card--img ][ hvr-float ]" id="Gregor" src="media/tokens/Gregor.svg">
+                </button>
+            </div>
+
+            <div class="[ col-md-2 ]">
+                <button onclick="callApi('Gilly',1427)">
+                    <img class="[ card--img ][ hvr-float ]" id="Gilly" src="media/tokens/Gilly.svg">
+                </button>
+            </div>
+
+            <div class="[ col-md-2 ]">
+                <button onclick="callApi('Sam',954)">
+                    <img class="[ card--img ][ hvr-float ]" id="Sam" src="media/tokens/Sam.svg">
+                </button>
+            </div>
+
+            <div class="[ col-md-1 ]"></div>
+        </div>
+
+        <div class="[ row ][ characterRowTwo ]">
+            <div class="[ col-md-1 ]"></div>
+
+            <div class="[ col-md-2 ]">
+                <button onclick="callApi('Greyworm',1445)">
+                    <img class="[ card--img ][ hvr-float ]" id="Greyworm" src="media/tokens/Greyworm.svg">
+                </button>
+            </div>
+
+            <div class="[ col-md-2 ]">
+                <button onclick="callApi('Euron',385)">
+                    <img class="[ card--img ][ hvr-float ]" id="Euron" src="media/tokens/Euron.svg">
+                </button>
+            </div>
+
+            <div class="[ col-md-2 ]">
+                <button onclick="callApi('Arya',148)">
+                    <img class="[ card--img ][ hvr-float ]" id="Arya" src="media/tokens/Arya.svg">
+                </button>
+            </div>
+
+            <div class="[ col-md-2 ]">
+                <button onclick="callApi('Daenarys',271)">
+                    <img class="[ card--img ][ hvr-float ]" id="Daenarys" src="media/tokens/Daenarys.svg">
+                </button>
+            </div>
+
+            <div class="[ col-md-2 ]">
+                <button onclick="callApi('Brienne',216)">
+                    <img class="[ card--img ][ hvr-float ]" id="Brienne" src="media/tokens/Brienne.svg">
+                </button>
+            </div>
+        </div>
+
+        <div class="[ col-md-1 ]"></div>
+    </div>
+
+    <div class="[ footer ]">
+
+        <p> Designed and coded by RemanoVictor™® </p>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="scripts/characterFetch.js"></script>
+    <script src="scripts/playerStorage.js"></script>
+</body>
+
+</html>
